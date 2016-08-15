@@ -3,7 +3,7 @@
 We hope you find exactly what you're looking for in a place to stay.
 <ul>
   {{#each model as |rental|}}
-  <li>{{rental-tile rental=rental destroyRental='destroyRental'}}</li>
+  <li>{{rental-tile rental=rental update="update" destroyRental="destroyRental"}}</li>
   {{/each}}
 </ul>
 
