@@ -13,9 +13,13 @@ We hope you find exactly what you're looking for in a place to stay.
 <h2> Cities </h2>
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.name}}</li>
+    <li>{{city.cityName}}</li>
   {{/each}}
 </ul>
+
+<hr>
+
+{{new-city save2="save3City"}}
 
 <hr>
 

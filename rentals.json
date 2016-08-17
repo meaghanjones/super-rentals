@@ -18,10 +18,10 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
   }],
   "cities":[{
-    "name": "Oslo",
+    "cityName": "Oslo",
     "country": "Norway"},
     {
-    "name": "Montreal",
+    "cityName": "Montreal",
     "country": "Canada"
   }]
 }
