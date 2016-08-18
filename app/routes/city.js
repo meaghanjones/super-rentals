@@ -14,6 +14,16 @@ export default Ember.Route.extend({
         return city.save(); // Wait until "newRental" has finished saving, then save "city'" too, so it remembers it contains "newRental".
       });
       this.transitionTo('city', params.city); // Afterwards, take us to the page displaying details for "city".
+    },
+
+    destroyCity(city) {
+      var rental_deletions = city.get('rentals').map(function(rental) {
+        return rental.destroyRecord();
+      });
+      Ember.RSVP.all(rental_deletions).then(function() {
+        return city.destroyRecord();
+      });
+      this.transitionTo('index');
     }
   }
 });
