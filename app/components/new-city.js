@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         country: this.get('country')
       };
       this.set('addNewCity', false);
-      this.sendAction('save2', params);
+      this.sendAction('save2', params); // first argument here needs to match the name you 'pass through' in the parent of this component (save2="methodName")
     }
   }
 });

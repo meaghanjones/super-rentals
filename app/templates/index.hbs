@@ -8,18 +8,17 @@ We hope you find exactly what you're looking for in a place to stay.
   {{/each}}
 </ul>
 
-{{new-rental save2="save3"}}
-
 <h2> Cities </h2>
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.cityName}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.cityName}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
 <hr>
 
 {{new-city save2="save3City"}}
+<!-- save2 is method in the child; save3City is method in the parent (currently the "index" template/route) -->
 
 <hr>
 
