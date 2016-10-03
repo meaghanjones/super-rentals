@@ -3,16 +3,10 @@
 #### By _**Meaghan Jones, Epicodus**_
 
 ### Description 
-Follow along with the weekend homework to create a property rental application. This is an application where property owners may list places for rent, and renters will be able to find places to stay. (Similar to AirBnB, or Vacasa ). As you build your application, refer back to the map you created during the warmup exercise as necessary.
+This is an application where property owners may list places for rent, and renters will be able to find places to stay. (Similar to AirBnB, or Vacasa ). 
 
-To begin, create three basic, static pages that do not require model data:
+The following things were setup for this project: 
 
-* Home
-* About
-* Contact
-Next, take your time to work through the following:
-
-Determine the properties that each rental should have. Add a list of rentals and their properties to the home page where users can see them when they land on the home page. (Use data hard-coded in the route handler to begin.)
 * Set up a Firebase app to serve as your backend data storage. 
 * Upload your rental data in json format.
 * Create an Ember Data model for rentals.
